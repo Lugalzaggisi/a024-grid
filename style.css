@@ -5,12 +5,21 @@
   
   .nav-container {
     margin-top: 20px;
+    /* text-align: center; */
+    display: grid;
+    grid-template-rows:1fr 40px 40px ;
+    justify-items: center;
   }
   
   .gallery {
     width: 900px;
     height: 800px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(8, 100px);
+    /* align-items:initial; */
+    /* justify-items:left; */
   }
   
   .gallery img {
@@ -19,30 +28,38 @@
   }
   
   #img-1 {
-
+    height: 400px;
+    grid-row: span 4;
   }
   
   #img-2 {
-
+    height:200px;
+    grid-row: span 2;
   }
   
   #img-3 {
-  
+    height:600px;  
+    grid-row: span 6;
   }
   
   #img-4 {
-
+    height:400px;
+    grid-row: 5/9;
   }
   
   #img-5 {
-
+    height: 300px;
+    grid-row: span 3;
   }
   
   #img-6 {
-
+    height:200px;
+    grid-row: 7/9;
+    grid-column: 3/4;
   }
   
   #img-7 {
-
+    height:300px
+    grid-row: span 3
   }
   
